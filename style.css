@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    background-color: rgb(197, 201, 209);
+}
+
+div {
+    height: 500px;
+    width: 100%;
+    border: solid 1px;
+    position: absolute;
+    top: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 0;
+}
+
+#first {
+    background-image: url("https://wallpapercave.com/wp/wp4741014.jpg");
+    animation: come 5s infinite;
+    animation-delay: 2.5s;
+    z-index: 0;
+}
+
+#second {
+    background-image: url("https://wallpapercave.com/wp/wp4531358.jpg");
+    animation: come 5s infinite;
+    z-index: 0;
+}
+
+@keyframes come {
+    0% {
+        left: 105%;
+        z-index: 10;
+    }
+    30% {
+        left: 0%;
+        z-index: 10;
+    }
+    100% {
+        left: 0%;
+        z-index: 9;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    div {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    div {
+        height: 250px;
+    }
+}
+
+p {
+    position: relative;
+    top: 500px;
+}
